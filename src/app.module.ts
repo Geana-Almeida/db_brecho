@@ -18,6 +18,10 @@ import { ProdService } from './data/services/prod.service';
 	    useClass: ProdService,
       imports: [ConfigModule],
     }),
+    CategoriaModule,
+    ProdutoModule,
+    UsuarioModule,
+    AuthModule
   ],
   controllers: [AppController],
   providers: [],
