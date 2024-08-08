@@ -4,7 +4,7 @@ import { Produto } from "./entities/produto.entity";
 import { CategoriaModule } from "../categoria/categoria.module";
 import { ProdutoService } from "./service/produto.service";
 import { CategoriaService } from "../categoria/service/categoria.service";
-import { ProdutoController } from "./controller/produto.entity.controller";
+import { ProdutoController } from "./controller/produto.controller";
 
 
 @Module({

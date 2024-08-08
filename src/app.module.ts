@@ -4,6 +4,9 @@ import { Categoria } from './categoria/entities/categoria.entity';
 import { CategoriaModule } from './categoria/categoria.module';
 import { Produto } from './produto/entities/produto.entity';
 import { ProdutoModule } from './produto/produto.module';
+import { Usuario } from './usuario/entities/usuario.entity';
+import { UsuarioModule } from './usuario/usuario.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -14,11 +17,13 @@ import { ProdutoModule } from './produto/produto.module';
     username: 'postgres',
     password: '123456',
     database: 'db_brecho',
-    entities: [Categoria, Produto],
+    entities: [Categoria, Produto, Usuario],
     synchronize: true,
   }),
   CategoriaModule,
-  ProdutoModule
+  ProdutoModule,
+  UsuarioModule,
+  AuthModule
   ],
   controllers: [],
   providers: [],
